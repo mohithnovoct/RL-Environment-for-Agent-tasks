@@ -34,6 +34,15 @@ app = create_app(
     env_name="data_cleaning_env",
 )
 
+try:
+    import gradio as gr
+    from app import demo
+    # Mount Gradio frontend UI to the FastAPI app at root
+    # Note: FastAPI resolves endpoints first, so /reset and /step keep working perfectly.
+    app = gr.mount_gradio_app(app, demo, path="/")
+except Exception as e:
+    print(f"Failed to mount Gradio UI: {e}")
+
 
 def main():
     """Entry point for direct execution via uv run or python -m."""

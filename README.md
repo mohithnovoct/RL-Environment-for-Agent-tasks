@@ -2,8 +2,7 @@
 title: Reinforcement Learning Agent Environment OpenEnv
 colorFrom: blue
 colorTo: green
-sdk: gradio
-app_file: app.py
+sdk: docker
 pinned: false
 python_version: "3.10"
 ---
