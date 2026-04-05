@@ -1,6 +1,12 @@
 README.md
+__init__.py
+client.py
+data_generator.py
+inference.py
+models.py
 pyproject.toml
 ./__init__.py
+./app.py
 ./client.py
 ./data_generator.py
 ./inference.py

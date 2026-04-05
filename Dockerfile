@@ -57,6 +57,9 @@ ENV PATH="/app/.venv/bin:$PATH"
 # Set PYTHONPATH so imports work correctly
 ENV PYTHONPATH="/app/env:$PYTHONPATH"
 
+# Expose port for HuggingFace Spaces and Grader
+EXPOSE 7860
+
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:7860/health')" || exit 1
