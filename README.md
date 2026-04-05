@@ -1,3 +1,13 @@
+---
+title: Reinforcement Learning Agent Environment OpenEnv
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "4.44.0"
+app_file: app.py
+pinned: false
+---
 # 🧹 Data Cleaning Environment — OpenEnv
 
 An **OpenEnv** environment that simulates real-world **data cleaning / data wrangling** tasks. An AI agent receives messy, real-world–style tabular data and must issue cleaning actions (fix types, handle nulls, remove duplicates, standardize formats, etc.) to transform it into a clean target state.
