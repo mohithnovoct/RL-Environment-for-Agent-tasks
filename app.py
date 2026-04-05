@@ -400,9 +400,12 @@ def build_score_gauge(score: float) -> str:
     <div class="score-gauge">
       <div class="score-ring">
         <svg width="150" height="150" viewBox="0 0 150 150">
-          <circle class="track" cx="75" cy="75" r="{r}" />
+          <circle class="track" cx="75" cy="75" r="{r}" fill="transparent" stroke="#1e293b" stroke-width="10" />
           <circle class="fill" cx="75" cy="75" r="{r}"
+                  fill="transparent"
                   stroke="{color}"
+                  stroke-width="10"
+                  stroke-linecap="round"
                   stroke-dasharray="{circ:.1f}"
                   stroke-dashoffset="{offset:.1f}" />
         </svg>
