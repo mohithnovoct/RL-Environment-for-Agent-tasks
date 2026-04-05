@@ -5,6 +5,3 @@ uvicorn>=0.24.0
 requests>=2.31.0
 pandas>=2.0.0
 numpy>=1.24.0
-
-# Fix for Python 3.13 built-in audioop removal causing gradio (pydub) to crash
-pyaudioop
