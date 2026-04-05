@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+.git/
+.github/
+*.md
+*.yaml
+!openenv.yaml
+outputs/
+logs/
+.dockerignore
+inference.py
